@@ -11,7 +11,7 @@ class Tsk < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/stealth-patch/tsk/releases/download/v0.1.0/tsk_darwin_amd64.tar.gz"
-    sha256 "13f1a585cef32ba84adf7976100076d6dae4292ce8266d70502e3fdb99ea82b0"
+    sha256 "37fe8652d8ec7703cd5709b056afdf604e4dfd97e8b59420d4878fea01f09fa9"
 
     def install
       bin.install "tsk"
@@ -19,7 +19,7 @@ class Tsk < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/stealth-patch/tsk/releases/download/v0.1.0/tsk_darwin_arm64.tar.gz"
-    sha256 "21bb41bdf378351be314befa3d42d330f7a913e321dded06c60354214f212617"
+    sha256 "1243a63de59f79218dd21264240014080c662dcb8d3a12b6e6d735c79e419077"
 
     def install
       bin.install "tsk"
