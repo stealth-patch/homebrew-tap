@@ -5,21 +5,21 @@
 class Tsk < Formula
   desc "A terminal task manager with TUI and CLI"
   homepage "https://github.com/stealth-patch/tsk"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/stealth-patch/tsk/releases/download/v0.1.0/tsk_darwin_amd64.tar.gz"
-    sha256 "27505b14949e4594ab303c565639354a4c81189c3ee14d6b2ee541163e270a55"
+    url "https://github.com/stealth-patch/tsk/releases/download/v0.1.1/tsk_darwin_amd64.tar.gz"
+    sha256 "7704becec7bf1f676a8dac9588e94669a6eae178c86a6017c8379af350c2ba4d"
 
     def install
       bin.install "tsk"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/stealth-patch/tsk/releases/download/v0.1.0/tsk_darwin_arm64.tar.gz"
-    sha256 "93654564cf9dff7d3a5bd32ef6e1b7c40eeee8dea737f1fae3b9596e2347f2ad"
+    url "https://github.com/stealth-patch/tsk/releases/download/v0.1.1/tsk_darwin_arm64.tar.gz"
+    sha256 "16206fe708cc8e713db902ceb8ef672a7c20b5a46e85cac77979249a8dd6ef3d"
 
     def install
       bin.install "tsk"
